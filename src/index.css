@@ -1,0 +1,89 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  overflow-x: hidden;
+}
+/* =========navbar====== */
+.basketIcon{
+  position: relative;
+  width: 50px;
+  cursor: pointer;
+}
+.basketIcon .producNum{
+  position: absolute;
+  bottom:0;
+  right: -10px;
+ width:20px;
+ height: 20px;
+ border-radius: 50%;
+ background-color: red;
+ color:white;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+/* ========navbar======= */
+/* ============store======= */
+.store {
+  margin: 20px 0px;
+}
+
+.store .head{
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+
+}
+.store .theRow{
+  width: 100%;
+}
+.store  .theProduct{
+  width:100%;
+  padding: 15px;
+background-color: white;
+box-shadow: 0px 0px 4px rgba(0,0,0,0.6);
+border-radius: 5px;
+margin-bottom: 20px;
+}
+.store .info{
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: brown; */
+  margin: 15px 0px;
+}
+/* ========ShoppingCart======= */
+.sideBar{
+  position: absolute;
+  right:0;
+  top:0;
+  transition: all 0.5s ease;
+}
+.openCart{
+  right:0;
+}
+.closeCart{
+  right:-600px;
+}
+/* ============ShoppingCart== */
+@media (max-width:992px) {
+ .navbar-collapse{
+  margin-top: 15px;
+  background-color: white !important;
+  padding: 20px !important;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.6);
+  color: black !important;
+  font-weight: 700;
+ } 
+}
+@media (max-width:500px) {
+.sideBar{
+  width:100% !important;
+}
+}
